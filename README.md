@@ -4,12 +4,20 @@ Ruby-ish methods for javascript types
 ## Usage
 
 ### Array
-[1,2,3].collect(function(){ return this * 3 }) => [2,4,6]
+[1,2,3].collect(function(){ return this * 3 }) 
+=> [3,6,9]
 
-[1,2,3].select(function(){ return this > 1 }) => [2,3]
+[1,2,3].select(function(){ return this > 1 }) 
+=> [2,3]
 
-[1,2,3].each(function(){ this.toString(); }) => [1,2,3]
+[1,2,3].each(function(){ this.toString(); }) 
+=> [1,2,3]
 
+[1,2,3].include(2)
+=> true
+
+[1,2,3,3,2].uniq()
+=> [1,2,3]
 
 ## Licensee
 

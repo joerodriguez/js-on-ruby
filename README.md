@@ -5,8 +5,11 @@ Ruby-ish methods for javascript types
 
 ### Array
 [1,2,3].collect(function(){ return this * 3 }) => [2,4,6]
+
 [1,2,3].select(function(){ return this > 1 }) => [2,3]
+
 [1,2,3].each(function(){ this.toString(); }) => [1,2,3]
+
 
 ## Licensee
 

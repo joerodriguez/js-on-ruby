@@ -81,6 +81,11 @@ it("should reject", function(){
   assert_equal(a, [1,3])
 });
 
+it("should uniq", function(){
+  var a = [2,2,3,4,2,4].uniq();
+  assert_equal(a, [2,3,4])
+});
+
 specs.each(function(){
   this[1].apply();
 });
